@@ -1,23 +1,19 @@
-import * as firebase from 'firebase/app';
-import 'firebase/storage';
-import 'firebase/firestore';
+import * as firebase from "firebase/app";
+import "firebase/storage";
+import "firebase/firestore";
+var firebaseConfig = {
+  apiKey: "AIzaSyCOW_lP7Kq_grwNuQNi5uiavBs5h4PKv2Y",
+  authDomain: "clgphotoapp.firebaseapp.com",
+  projectId: "clgphotoapp",
+  storageBucket: "clgphotoapp.appspot.com",
+  messagingSenderId: "286978240483",
+  appId: "1:286978240483:web:3085600949c303bc943ad6",
+  measurementId: "G-2QCQNH8C4N",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const projectStorage = firebase.storage();
+const projectFirestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-// Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAV0MIc7nJ5bt2R3eEvroWL9-tuByzkkz8",
-    authDomain: "coding-cosmos.firebaseapp.com",
-    databaseURL: "https://coding-cosmos.firebaseio.com",
-    projectId: "coding-cosmos",
-    storageBucket: "coding-cosmos.appspot.com",
-    messagingSenderId: "536522201509",
-    appId: "1:536522201509:web:757a57ccd738551e79b04c"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);   
-
-  const projectStorage = firebase.storage();
-  const projectFirestore = firebase.firestore();
-  const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-
-
-  export { projectStorage, projectFirestore, timestamp};
+export { projectStorage, projectFirestore, timestamp };
