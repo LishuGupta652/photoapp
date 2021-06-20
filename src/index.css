@@ -2,13 +2,13 @@
 
 :root {
   --primary: #efb6b2;
-  --secondary: #4e4e4e;
+  --secondary: #212121;
   --error: #ff4a4a;
 }
 
 /* base styles & title */
 body {
-  background-color: #323232;
+  background-color: #fafafa;
   font-family: "Noto Serif";
   color: var(--secondary);
 }
